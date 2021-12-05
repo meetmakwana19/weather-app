@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 *{
     box-sizing: border-box;
@@ -16,6 +17,8 @@ body{
                          "x center w";
     /* to understand grid-template-areas refer this
     https://miro.medium.com/max/2000/1*ABgYntR1ZJbroJWeHcFr9w.png */
+    color: #192741;
+
 }
 
 header{
@@ -24,7 +27,7 @@ header{
 }
 
 .profile{
-    width: 50px;
+    width: 65px;
     height: 50px;
     margin: 20px;
 }
@@ -41,6 +44,8 @@ header{
 
 .meet{
     margin-top: -24px;
+    font-size: 35px;
+    font-weight: bolder;
 }
 
 .right-h{
@@ -55,15 +60,16 @@ header{
     border-radius: 10px;
     height: 30px;
     width: 200px;
-    padding: 15px;
+    padding: 20px;
     background-color: rgb(235, 235, 235);
     outline: none;
+    margin-top: -10px;
 }
 
 .bell{
     width: 30px;
     height: 30px;
-    margin: 0 20px;
+    margin: -10px 20px;
 }
 .aside-left{
     /* background-color: aqua; */
@@ -76,7 +82,7 @@ header{
 .logo{
     width: 50px;
     height: 50px;
-    margin: 20px 13px;
+    margin: 20px 18px;
 }
 
 .app-name{
@@ -84,19 +90,28 @@ header{
     font-style: italic;
     margin-left:8px;
     margin-top: -15px;
+    font-family: 'Fredoka One', cursive;
 }
 
 .aside-mid{
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 .aside-icons{
-    margin: 15px 30px;
-    width: 20px;
-    height: 20px;
-    /* background-color: orange; */
+    margin: 15px 25px;
+    width: 35px;
+    height: 35px;
     border-radius: 5px;
-    /* padding-bottom: 10px; */
-    filter: invert(0);
+    padding: 7px;
+    /* to create a color for svg, use this  */
+    /* https://codepen.io/sosuke/pen/Pjoqqp?__cf_chl_jschl_tk__=ZXAa3WHiZXuGpAY7bdPas_9mrlwcB9PUT1abMQ0nHm8-1638734865-0-gaNycGzNDGU */
+    /* filter: invert(60%) sepia(49%) saturate(2726%) hue-rotate(342deg) brightness(100%) contrast(96%); */
+}
+
+.aside-icons:hover{
+    background-color: orange;
+    /* filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(104%) contrast(101%);} */
+    box-shadow: 0 0 10px #ff9028;
+
 }
 
 .aside-lower{
@@ -187,8 +202,8 @@ main{
 
 .card-low{
     border-radius: 20px;
-    margin: 0 20px;
-    width: 20%;
+    margin: 0 10px;
+    width: 40%;
     padding: 10px;
 }
 
@@ -198,27 +213,29 @@ main{
 }
 
 .pressure-h{
-    font-size: x-small;
-    margin-left: 25%;
+    font-size: 11px;
+    margin-left: 28%;
     margin-top: 8%;
 }
 
 .pressure-info{
     font-weight: bolder;
-    margin-left: 16%;
+    margin-left: 21%;
     margin-top: -15%;
+    font-size: larger;
 }
 
 .visibility-h{
-    font-size: x-small;
-    margin-left: 25%;
+    font-size: 11px;
+    margin-left: 31%;
     margin-top: 8%;
 }
 
 .visibility-info{
     font-weight: bolder;
-    margin-left: 20%;
+    margin-left: 25%;
     margin-top: -15%;
+    font-size: larger;
 }
 
 .visibility{
@@ -230,15 +247,16 @@ main{
 }
 
 .humadity-h{
-    font-size: x-small;
-    margin-left: 25%;
+    font-size: 11px;
+    margin-left: 27%;
     margin-top: 8%;
 }
 
 .humadity-info{
     font-weight: bolder;
-    margin-left: 30%;
+    margin-left: 33%;
     margin-top: -15%;
+    font-size: larger;
 }
 
 
@@ -299,6 +317,7 @@ main{
 
 .main-lower-card-left{
     padding: 20px;
+    padding-bottom: 0;
 }
 
 .card-right{
@@ -307,11 +326,10 @@ main{
 }
 
 .main-lower-card-left{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 20px;
     width: 70%;
-    margin: 20px;
-    
+    /* margin: 20px; */
 }
 
 .card-left{
@@ -319,12 +337,24 @@ main{
     margin-top: -35px;
 }
 
+.line-graph-img{
+    width: 100%;
+    height: 160px;
+}
+
 .card-left-icons{
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     /* background-color: orange; */
     border-radius: 5px;
     margin: 0 20px;
+    padding: 7px;
+}
+
+.card-left-icons:hover{
+    background-color: orange;
+    /* filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(104%) contrast(101%);} */
+    box-shadow: 0 0 10px #ff9028;
 }
 
 .main-lower-card-right{
