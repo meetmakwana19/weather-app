@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 5% auto 25%;
+    grid-template-rows: 15% auto auto;
+    grid-template-areas: "x y w"
+                         "x center  w"
+                         "x center w";
+    /* to understand grid-template-areas refer this
+    https://miro.medium.com/max/2000/1*ABgYntR1ZJbroJWeHcFr9w.png */
+}
+
+header{
+    /* background-color: red; */
+    grid-area: y;
+}
+
+.profile{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.left-h-name{
+    margin-left: 100px;
+    /* margin-top: -70px; */
+}
+
+.hello{
+    font-size: large;
+    margin-top: -75px;
+}
+
+.meet{
+    margin-top: -24px;
+}
+
+.right-h{
+    float: right;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: -40px;
+}
+
+.searchbar{
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    padding: 10px;
+    background-color: #f6f6f6e5;
+}
+
+.bell{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+.aside-left{
+    /* background-color: aqua; */
+    grid-area: x;
+    /* doing relative to make aside-lower absolute and get the exit at bottom */
+    /* position: relative; */
+    height: 100vh;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 20px 13px;
+}
+
+.app-name{
+    font-size: medium;
+    font-style: italic;
+    margin-left:8px;
+    margin-top: -15px;
+}
+
+.aside-mid{
+    margin-top: 20vh;
+}
+.aside-icons{
+    margin: 15px 30px;
+    width: 20px;
+    height: 20px;
+    /* background-color: orange; */
+    border-radius: 5px;
+    /* padding-bottom: 10px; */
+    filter: invert(0);
+}
+
+.aside-lower{
+    position: absolute;
+    bottom: 30px;
+    justify-content: center;
+}
+
+main{
+    grid-area: center;
+}
+
+.main-upper{
+    display: flex;
+    height: 50%;
+}
+
+.card{
+    width: 50%;
+    margin: 20px;
+    padding: 30px;
+    margin-top: 0;
+}
+
+#card1{
+    background-image: url("/pictures/card2_bg.jpg") ;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.card-top{
+    height: 30%;
+}
+
+.card-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.card-heading{
+    font-weight: bolder;
+    font-size: large;
+    margin-left: 80px;
+    margin-top: -50px;
+}
+
+.card-sub-heading{
+    margin-left: 80px;
+    margin-top: -20px;
+}
+
+.card-mid{
+    height: 30%;
+    margin-top: -5px;
+}
+
+.card-mid-figure{
+    font-size: 40px;
+}
+
+.card-mid-info{
+    margin-top: -30px;
+}
+
+.mini-card-mid{
+    background-color: white;
+    border-radius: 7px;
+    width: 10%;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 100px;
+    margin-top: -50px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.card-lower{
+    height: 35%;
+    display: flex;
+    margin: 50px -20px;
+}
+
+.card-low{
+    border-radius: 20px;
+    margin: 0 20px;
+    width: 20%;
+    padding: 10px;
+}
+
+.pressure{
+    background-color: #192740;
+    color: white;
+}
+
+.pressure-h{
+    font-size: x-small;
+    margin-left: 25%;
+    margin-top: 8%;
+}
+
+.pressure-info{
+    font-weight: bolder;
+    margin-left: 16%;
+    margin-top: -15%;
+}
+
+.visibility-h{
+    font-size: x-small;
+    margin-left: 25%;
+    margin-top: 8%;
+}
+
+.visibility-info{
+    font-weight: bolder;
+    margin-left: 20%;
+    margin-top: -15%;
+}
+
+.visibility{
+    background-color: #cce16a;
+}
+
+.humadity{
+    background-color: white;
+}
+
+.humadity-h{
+    font-size: x-small;
+    margin-left: 25%;
+    margin-top: 8%;
+}
+
+.humadity-info{
+    font-weight: bolder;
+    margin-left: 30%;
+    margin-top: -15%;
+}
+
+
+#card2{
+    border-radius: 20px;
+    background-image: url("/pictures/card1_bg.jpg");
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    /* filter: brightness(80%); */
+}
+
+#wind-icon{
+    width: 90px;
+    height: 90px;
+    margin-left: -18px;
+    margin-top: -15px;
+}
+
+#card-h-2{
+    margin-left: 80px;
+    margin-top: -75px;
+}
+
+.box-AQI{
+    margin-left: 80px;
+    padding-left: 8px;
+}
+
+.card-lower-progress{
+    height: 35%;
+    /* width: 80%; */
+    padding: 40px;
+    background-color: white;
+    margin: 50px 0px;
+    border-radius: 20px;
+}
+
+.good{
+    margin-top: -30px;
+    margin-bottom: -30px;
+    margin-left: 0px;
+    font-size: small;
+}
+
+.hazardous{
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 280px;
+}
+
+.main-lower{
+    display: flex;
+    height: 50%;
+}
+
+.main-lower-card-left{
+    padding: 20px;
+}
+
+.card-right{
+    font-size: xx-large;
+}
+
+.card-left{
+    float: right;
+}
+
+.main-lower-card-left{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 70%;
+    margin: 20px;
+
+}
+
+.main-lower-card-right{
+    border-radius: 20px;
+    width: 30%;
+    margin: 20px;
+    background-image: url("/pictures/rainy_day.jpg") ;
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    padding: 20px;
+}
+
+.main-lower-card-right-footer{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.main-lower-card-right-temp{
+    font-weight: bolder;
+    font-size: xx-large;
+    position: absolute;
+    bottom: 110px;
+}
+
+.main-lower-card-right-forecast{
+    position: absolute;
+    bottom: 90px;
+}
+
+.aside-right{
+    background-color: #f7f7f7;
+    grid-area: w;
+}
+
+.aside-right-header{
+    border-bottom: 1px solid rgb(206, 206, 206);
+    margin: 30px;
+    height: 13%;
+}
+
+.day{
+    margin: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+select{
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    padding: 7px;
+    /* margin: 10px; */
+    background-color: #f7f7f7;
+    color: orange;
+    overflow: hidden;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+.temp{
+    float: right;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #ff9d43;
+    margin-top: -40px;
+}
+
+.sun-graph{
+    /* border: 2px solid #ff9d43; */
+    height: 20%;
+    margin: 0 20px;
+}
+
+.sunrise{
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+.uvi-card{
+    border-radius: 25px;
+    margin: 30px;
+    height: 10%;
+    background-color: #192741;
+    color: white;
+    padding: 10px 20px;
+}
+
+.sun{
+    width: 50px;
+    height: 50px;
+}
+
+.uvi{
+    margin-left: 70px;
+    margin-top: -45px;
+    font-weight: bolder;
+}
+
+.uvi-status{
+    margin-left: 130px;
+    margin-top: -35px;
+    background-color: #cbe16b;
+    color: black;
+    padding: 1px 6px ;
+    border-radius: 20px;
+    width: 23%;
+    font-size: 11px;
+}
+
+.uvi-info{
+    font-size: small;
+    margin-left: 70px;
+    margin-top: 5px;
+}
+
+.prediction{
+    /* border: 2px solid black; */
+    height: 35%;
+    margin: 20px;
+}
+
+.prediction-h{
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-left: 20px;
+    color: #2e3748;
+}
+
+.prediction-cards{
+    height: 50px;
+    background-color: white;
+}
+
+#prediction-card-1{
+    /* border: 2px solid black; */
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#prediction-card-2{
+    /* border: 2px solid black; */
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.cloudy{
+    width: 50px;
+    height: 50px;
+}
+
+.date{
+    color: grey;
+    font-size: 12px;
+    margin-top: -42px;
+    margin-left: 80px;
+}
+
+.prediction-info{
+    font-style: 13px;
+    margin-left: 80px;
+    margin-top: -20px;
+}
+
+.prediction-temp{
+    float: right;
+    margin-top: -48px;
+    margin-right: 10px;
+    color: #ff9d43;
+    font-weight: bolder;
+}
+
+.next{
+    border: none;
+    border-radius: 10px;
+    float: right;
+    width: 35%;
+    /* padding: 15px; */
+    height: 45px;
+    margin-right: 10px;
+    background-color: #ff9d43;
+    color: white;
+}
+
+.next:hover{
+    cursor: pointer;
+    /* border: 5px solid ; */
+    box-shadow: 0 0 10px #ff9028;
+}
+
+/* .next-icon{
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-right: -107px;
+    margin-top: 16px;    
+    filter: invert(100);
+    margin-left: 100px;
+} */
