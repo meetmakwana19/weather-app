@@ -55,8 +55,9 @@ header{
     border-radius: 10px;
     height: 30px;
     width: 200px;
-    padding: 10px;
-    background-color: #f6f6f6e5;
+    padding: 15px;
+    background-color: rgb(235, 235, 235);
+    outline: none;
 }
 
 .bell{
@@ -130,6 +131,10 @@ main{
     height: 30%;
 }
 
+.white{
+    color: white;
+}
+
 .card-icon{
     width: 50px;
     height: 50px;
@@ -154,6 +159,7 @@ main{
 
 .card-mid-figure{
     font-size: 40px;
+    font-weight: bolder;
 }
 
 .card-mid-info{
@@ -238,7 +244,7 @@ main{
 
 #card2{
     border-radius: 20px;
-    background-image: url("/pictures/card1_bg.jpg");
+    background-image: url("/pictures/card2bg.jpg");
     background-size: cover;
     background-repeat:   no-repeat;
     background-position: center center;
@@ -260,6 +266,7 @@ main{
 .box-AQI{
     margin-left: 80px;
     padding-left: 8px;
+    color: black;
 }
 
 .card-lower-progress{
@@ -296,10 +303,7 @@ main{
 
 .card-right{
     font-size: xx-large;
-}
-
-.card-left{
-    float: right;
+    font-weight: bolder;
 }
 
 .main-lower-card-left{
@@ -307,7 +311,20 @@ main{
     border-radius: 20px;
     width: 70%;
     margin: 20px;
+    
+}
 
+.card-left{
+    float: right;
+    margin-top: -35px;
+}
+
+.card-left-icons{
+    width: 25px;
+    height: 25px;
+    /* background-color: orange; */
+    border-radius: 5px;
+    margin: 0 20px;
 }
 
 .main-lower-card-right{
