@@ -173,7 +173,12 @@ main{
 }
 
 .card-mid-figure{
-    font-size: 40px;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.card-mid-figure-aqi{
+    font-size: 36px;
     font-weight: bolder;
 }
 
@@ -218,10 +223,17 @@ main{
     margin-top: 8%;
 }
 
-.pressure-info{
+.pressure-info, .pressure-unit{
     font-weight: bolder;
-    margin-left: 21%;
+    margin-left: 17%;
     margin-top: -15%;
+    font-size: larger;
+}
+
+.pressure-unit{
+    font-weight: bolder;
+    margin-left: 57%;
+    margin-top: -38%;
     font-size: larger;
 }
 
@@ -235,6 +247,13 @@ main{
     font-weight: bolder;
     margin-left: 25%;
     margin-top: -15%;
+    font-size: larger;
+}
+
+.visibility-unit{
+    font-weight: bolder;
+    margin-left: 62%;
+    margin-top: -39%;
     font-size: larger;
 }
 
@@ -259,6 +278,12 @@ main{
     font-size: larger;
 }
 
+.humadity-unit{
+    font-weight: bolder;
+    margin-left: 54%;
+    margin-top: -38%;
+    font-size: larger;
+}
 
 #card2{
     border-radius: 20px;
@@ -282,7 +307,7 @@ main{
 }
 
 .box-AQI{
-    margin-left: 80px;
+    margin-left: 95px;
     padding-left: 8px;
     color: black;
 }
